@@ -83,6 +83,8 @@ GEM
     factory_girl_rails (4.5.0)
       factory_girl (~> 4.5.0)
       railties (>= 3.0.0)
+    faker (1.4.3)
+      i18n (~> 0.5)
     fastercsv (1.5.5)
     fattr (2.2.2)
     ffi (1.9.10)
@@ -287,6 +289,7 @@ DEPENDENCIES
   binding_of_caller
   brakeman
   factory_girl_rails
+  faker
   guard
   jbuilder (~> 2.0)
   metric_fu
