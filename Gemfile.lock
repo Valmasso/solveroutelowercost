@@ -255,6 +255,8 @@ GEM
       rdoc (~> 4.0)
     sexp_processor (4.6.0)
     shellany (0.0.1)
+    shoulda-matchers (2.8.0)
+      activesupport (>= 3.0.0)
     simplecov (0.10.0)
       docile (~> 1.1.0)
       json (~> 1.8)
@@ -308,6 +310,7 @@ DEPENDENCIES
   rails (= 4.1.11)
   rspec-rails (~> 3.0)
   sdoc (~> 0.4.0)
+  shoulda-matchers
   simplecov
   spring
   sqlite3

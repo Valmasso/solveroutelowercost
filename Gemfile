@@ -17,6 +17,7 @@ group :development, :test do
   gem 'pry-nav'
   gem 'rspec-rails', '~> 3.0'
   gem 'factory_girl_rails'
+  gem 'shoulda-matchers'
   gem 'guard-rspec', require: false
   gem 'simplecov', require: false
   gem 'brakeman', require: false
