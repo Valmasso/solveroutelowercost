@@ -104,6 +104,11 @@ GEM
       pry (>= 0.9.12)
       shellany (~> 0.0)
       thor (>= 0.18.1)
+    guard-compat (1.2.1)
+    guard-rspec (4.6.1)
+      guard (~> 2.1)
+      guard-compat (~> 1.1)
+      rspec (>= 2.99.0, < 4.0)
     haml (4.0.6)
       tilt
     highline (1.6.21)
@@ -217,6 +222,10 @@ GEM
       netrc (~> 0.7)
     roodi (3.3.1)
       ruby_parser (~> 3.2, >= 3.2.2)
+    rspec (3.3.0)
+      rspec-core (~> 3.3.0)
+      rspec-expectations (~> 3.3.0)
+      rspec-mocks (~> 3.3.0)
     rspec-core (3.3.1)
       rspec-support (~> 3.3.0)
     rspec-expectations (3.3.0)
@@ -290,7 +299,7 @@ DEPENDENCIES
   brakeman
   factory_girl_rails
   faker
-  guard
+  guard-rspec
   jbuilder (~> 2.0)
   metric_fu
   pry
