@@ -11,18 +11,22 @@ group :doc do
 end
 
 group :development, :test do
-  gem 'spring'
+  gem 'rspec-rails', '~> 2.0'
   gem 'pry'
   gem 'pry-remote'
   gem 'pry-nav'
-  gem 'rspec-rails', '~> 3.0'
+  gem 'better_errors'
+  gem 'binding_of_caller'
+end
+
+group :test do
+  gem 'spring'
   gem 'factory_girl_rails'
-  gem 'shoulda-matchers'
+  gem 'shoulda-matchers', require: false
   gem 'guard-rspec', require: false
   gem 'simplecov', require: false
   gem 'brakeman', require: false
   gem 'metric_fu'
-  gem 'better_errors'
-  gem 'binding_of_caller'
   gem 'faker'
+  gem 'database_cleaner'
 end
