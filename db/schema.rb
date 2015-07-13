@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150711215637) do
+ActiveRecord::Schema.define(version: 20150712220949) do
 
   create_table "maps", force: true do |t|
     t.string   "name"
@@ -20,5 +20,16 @@ ActiveRecord::Schema.define(version: 20150711215637) do
   end
 
   add_index "maps", ["name"], name: "index_maps_on_name", unique: true
+
+  create_table "paths", force: true do |t|
+    t.string   "from"
+    t.string   "to"
+    t.decimal  "distance",   precision: 10, scale: 2
+    t.integer  "map_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "paths", ["map_id"], name: "index_paths_on_map_id"
 
 end
