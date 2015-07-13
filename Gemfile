@@ -11,7 +11,8 @@ group :doc do
 end
 
 group :development, :test do
-  gem 'rspec-rails', '~> 2.0'
+  gem 'rspec-rails', '~> 3.0'
+  gem 'factory_girl_rails'
   gem 'pry'
   gem 'pry-remote'
   gem 'pry-nav'
@@ -21,7 +22,6 @@ end
 
 group :test do
   gem 'spring'
-  gem 'factory_girl_rails'
   gem 'shoulda-matchers', require: false
   gem 'guard-rspec', require: false
   gem 'simplecov', require: false
