@@ -18,5 +18,16 @@ FactoryGirl.define do
         create_list(:path, evaluator.paths_count, map: map)
       end
     end
+
+    factory :map_with_paths_defined do
+      after(:create) do |map|
+        create(:path, from: "D", to: "E", distance: 30, map: map)
+        create(:path, from: "A", to: "C", distance: 20, map: map)
+        create(:path, from: "C", to: "D", distance: 30, map: map)
+        create(:path, from: "A", to: "B", distance: 10, map: map)
+        create(:path, from: "B", to: "E", distance: 50, map: map)
+        create(:path, from: "B", to: "D", distance: 15, map: map)
+      end
+    end
   end
 end
