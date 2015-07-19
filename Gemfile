@@ -29,4 +29,5 @@ group :test do
   gem 'metric_fu'
   gem 'faker'
   gem 'database_cleaner'
+  gem 'codeclimate-test-reporter', require: nil
 end
