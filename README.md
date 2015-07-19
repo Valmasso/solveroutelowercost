@@ -1,5 +1,5 @@
 # SolveRouteLowerCost
-[![Code Climate](https://codeclimate.com/github/Valmasso/solveroutelowercost/badges/gpa.svg)](https://codeclimate.com/github/Valmasso/solveroutelowercost)
+[![Code Climate](https://codeclimate.com/github/Valmasso/solveroutelowercost/badges/gpa.svg)](https://codeclimate.com/github/Valmasso/solveroutelowercost) [![Build Status](https://travis-ci.org/Valmasso/solveroutelowercost.svg)](https://travis-ci.org/Valmasso/solveroutelowercost)
 
 Este repositório contém uma aplicação web simples, cujo o intuito é resolver o menor valor de entrega e seu caminho.
 
